@@ -1,0 +1,98 @@
+/* General button styling */
+button, .button {
+  margin: 10px;
+  padding: 15px 25px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline for links */
+  transition: 0.3s;
+  display: inline-block;
+}
+
+/* Align buttons parallel */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Hover effect for both button and link */
+button:hover, .button:hover {
+  transform: scale(1.1);
+  background: #45a049;
+}
+
+/* Back button specific styling */
+#back {
+  background-color: #f44336;
+}
+
+#back:hover {
+  background-color: #d32f2f;
+}
+
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: auto;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #FFFFE0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen.active {
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  color: rgb(2, 2, 2);
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+}
+
+.objectives {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.objectives ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+  color: #333;
+}

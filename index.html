@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Literacy Simulation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+  <div id="app">
+    <img id="logo" src="Logo2.png" alt="Logo" />
+    
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen active">
+      <h1>Welcome to Reading and Writing Simulations</h1>
+      <div class="objectives">
+        
+        <ul>
+          <strong>The Objectives Of This Simulation Are:</strong><li>Recognize letters (A-Z) and numbers (0-10).</li>
+          <li>To be able to write their names.</li>
+          <li>To be able to agree on the date and write it.</li>
+        </ul>
+      </div>
+      <div class="button-container">
+        <button onclick="navigateTo('reading-menu')">Reading</button>
+        <button onclick="navigateTo('writing-menu')">Writing</button>
+      </div>
+    </div>
+
+    <!-- Reading Menu -->
+    <div id="reading-menu" class="screen hidden">
+      <h2>Reading Simulations</h2>
+      <a href="http://127.0.0.1:5501/index.html" class="button">Recognize Letters & Numbers</a>
+      <a href="http://127.0.0.1:5503/index.html" class="button">Read Words</a>
+      <button id="back" onclick="navigateTo('home-screen')">Back to Home</button>
+    </div>
+
+    <!-- Writing Menu -->
+    <div id="writing-menu" class="screen hidden">
+      <h2>Writing Simulations</h2>
+      <a href="http://127.0.0.1:5500/index.html" class="button">Write Names and Dates</a>
+      <button id="back" onclick="navigateTo('home-screen')">Back to Home</button>
+    </div>
+  </div>
+
+  <footer>
+    Designed For Namibian Correctional Service
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
